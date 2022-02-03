@@ -1,0 +1,50 @@
+.seasons_items {
+  width: 10em;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border: solid 2px black;
+  list-style: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+#item1 {
+  background-color: #ccd5ae;
+  &:active {
+    opacity: 60%;
+  }
+}
+#item2 {
+  background-color: #f08080;
+  &:active {
+    opacity: 60%;
+  }
+}
+#item3 {
+  background-color: #d4a373;
+  &:active {
+    opacity: 60%;
+  }
+}
+#item4 {
+  background-color: #fefae0;
+  &:active {
+    opacity: 60%;
+  }
+}
+.seasons_items_inactive {
+  width: 10em;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border: none;
+  list-style: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}

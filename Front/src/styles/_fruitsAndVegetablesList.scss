@@ -1,0 +1,33 @@
+.fruits_and_veg {
+  display: flex;
+  justify-content: center;
+  margin-top: 8em;
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(144, 169, 85, 0.4);
+    border-radius: 5px;
+    width: 50%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+    ul {
+      padding-bottom: 3em;
+      h2 {
+        color: #132a13;
+        font-weight: bolder;
+      }
+    }
+
+    li {
+      list-style: none;
+      font-size: 3em;
+    }
+
+    h2 {
+      font-size: 4em;
+    }
+  }
+}

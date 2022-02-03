@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  h1 {
+    font-size: 3em;
+    padding-left: 1em;
+  }
+  &__logo {
+    width: 5em;
+    padding-left: 2em;
+    img {
+      width: 100%;
+    }
+  }
+}
