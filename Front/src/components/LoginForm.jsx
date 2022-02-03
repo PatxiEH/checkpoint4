@@ -5,8 +5,6 @@ const LoginForm = ({ idUser, setIdUser }) => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const [errorMessage, setErrorMessage] = useState();
-  console.log(password);
-  console.log(idUser);
 
   const Login = (e) => {
     e.preventDefault();
@@ -24,7 +22,6 @@ const LoginForm = ({ idUser, setIdUser }) => {
       )
       .then((response) => response.data)
       .then((data) => {
-        console.log(data.id);
         setIdUser(data.id);
         setErrorMessage("");
       })

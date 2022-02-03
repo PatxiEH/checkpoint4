@@ -44,7 +44,6 @@ fruitsRouter.delete('/:id', (req, res) => {
 });
 
 fruitsRouter.get('/seasons/:id', (req, res) => {
-  console.log(req.params);
   const { id } = req.params;
   Fruit.getFruitsBySeason(id)
     .then((fruits) => {

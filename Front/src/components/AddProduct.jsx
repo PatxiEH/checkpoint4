@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import LoginForm from "./LoginForm";
+import Logout from "./Logout";
 
 const AddProduct = ({ idUser, updateList, setUpdateList, setIdUser }) => {
   const [name, setName] = useState(null);
@@ -36,10 +37,18 @@ const AddProduct = ({ idUser, updateList, setUpdateList, setIdUser }) => {
 
   return (
     <>
-      <div>
+      <div className="links">
         <a className="a_showdiv" onClick={showDiv}>
           Ajouter un fruit ou un légume
         </a>
+        {idUser !== null ? (
+          <Logout
+            setIdUser={setIdUser}
+            setShowAddProductDiv={setShowAddProductDiv}
+          />
+        ) : (
+          <></>
+        )}
       </div>
       {showAddProductDiv === true ? (
         <>

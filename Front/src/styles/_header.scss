@@ -1,14 +1,16 @@
 .header {
   display: flex;
+  justify-content: space-between;
   h1 {
     font-size: 3em;
     padding-left: 1em;
   }
   &__logo {
-    width: 5em;
+    display: flex;
+    width: 60%;
     padding-left: 2em;
     img {
-      width: 100%;
+      width: 7%;
     }
   }
 }

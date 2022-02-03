@@ -1,0 +1,331 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header h1 {
+  font-size: 3em;
+  padding-left: 1em;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  padding-left: 2em;
+}
+
+.header__logo img {
+  width: 7%;
+}
+
+.seasons_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 3em;
+  padding-left: 3em;
+}
+
+.seasons_items {
+  width: 10em;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border: solid 2px black;
+  list-style: none;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+#item1 {
+  background-color: #ccd5ae;
+}
+
+#item1:active {
+  opacity: 60%;
+}
+
+#item2 {
+  background-color: #f08080;
+}
+
+#item2:active {
+  opacity: 60%;
+}
+
+#item3 {
+  background-color: #d4a373;
+}
+
+#item3:active {
+  opacity: 60%;
+}
+
+#item4 {
+  background-color: #fefae0;
+}
+
+#item4:active {
+  opacity: 60%;
+}
+
+.seasons_items_inactive {
+  width: 10em;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border: none;
+  list-style: none;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.fruits_and_veg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 8em;
+}
+
+.fruits_and_veg__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: rgba(144, 169, 85, 0.4);
+  border-radius: 5px;
+  width: 50%;
+  height: auto;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.fruits_and_veg__container ul {
+  padding-bottom: 3em;
+}
+
+.fruits_and_veg__container ul h2 {
+  color: #132a13;
+  font-weight: bolder;
+}
+
+.fruits_and_veg__container li {
+  list-style: none;
+  font-size: 3em;
+}
+
+.fruits_and_veg__container h2 {
+  font-size: 4em;
+}
+
+.type_select_constainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 5em;
+}
+
+.select_button {
+  width: 20vw;
+  height: auto;
+  border: solid 2px black;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 2em;
+  padding-left: 2em;
+  background-color: #e9edc9;
+  font-size: 1em;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.select_button__emoji {
+  font-size: 2em;
+}
+
+.button_inactive {
+  width: 20vw;
+  height: auto;
+  border: none;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 2em;
+  padding-left: 2em;
+  background-color: #e9edc9;
+  font-size: 1em;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  opacity: 60%;
+}
+
+.button_inactive__:hover {
+  width: 20vw;
+  height: auto;
+  border: solid 2px black;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 2em;
+  padding-left: 2em;
+  background-color: #e9edc9;
+  font-size: 1em;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+body {
+  color: brown;
+  background-color: #fefae0;
+}
+
+.add_product_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em;
+  font-size: 2em;
+}
+
+.add_product_container h2 {
+  font-size: 2.3em;
+}
+
+.add_product {
+  border: brown solid 3px;
+  padding: 5em;
+  padding-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.add_product input {
+  width: 10em;
+  font-size: 1em;
+}
+
+.add_product select {
+  width: 10em;
+  font-size: 1em;
+}
+
+.add_product button {
+  font-size: 1em;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.a_showdiv {
+  font-size: 2em;
+  padding-left: 1em;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.login_form_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em;
+  font-size: 2em;
+}
+
+.login_form_container h2 {
+  font-size: 2.3em;
+}
+
+.login_form {
+  border: brown solid 3px;
+  padding: 5em;
+  padding-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.login_form input {
+  width: 10em;
+  font-size: 1em;
+}
+
+.login_form select {
+  width: 10em;
+  font-size: 1em;
+}
+
+.login_form button {
+  font-size: 1em;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.a_showdiv {
+  font-size: 2em;
+  padding-left: 1em;
+}
+/*# sourceMappingURL=styles.css.map */
