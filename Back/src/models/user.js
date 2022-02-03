@@ -30,10 +30,10 @@ const getByEmail = (email) => {
 
 const validateUser = (req, res, next) => {
   const errors = Joi.object({
-    firstname: Joi.string().max(100).presence('required'),
-    name: Joi.string().max(255).presence('optional'),
     email: Joi.string().email().max(255).presence('required'),
-    password: Joi.string().min(8).max(10).presence('required'),
+    lastname: Joi.string().max(255).presence('optional'),
+    firstname: Joi.string().max(100).presence('required'),
+    password: Joi.string().min(5).max(10).presence('required'),
   }).validate(req.body, { abortEarly: false }).error;
   if (errors) {
     next(errors.message);
@@ -42,17 +42,17 @@ const validateUser = (req, res, next) => {
   }
 };
 
-const create = async (email, name, firstname, password) => {
+const create = async (email, lastname, firstname, password) => {
   const hashedPassword = await hashPassword(password);
   return connection
     .promise()
     .query(
-      'INSERT INTO users (email, name, firstname, password) VALUES(?,?,?,?)',
-      [email, name, firstname, hashedPassword]
+      'INSERT INTO users (email, lastname, firstname, password) VALUES(?,?,?,?)',
+      [email, lastname, firstname, hashedPassword]
     )
     .then(([result]) => {
       const id = result.insertId;
-      return { id, email, name, firstname, hashedPassword };
+      return { id, email, lastname, firstname, hashedPassword };
     });
 };
 

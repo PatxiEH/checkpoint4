@@ -1,5 +1,6 @@
 import React from "react";
 import kiwi from "../assets/kiwi.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -9,6 +10,9 @@ const Header = () => {
           <img src={kiwi} alt="logo" />
           <h1>Les fruits et les légumes de saison</h1>
         </div>
+        <Link to="/signin">
+          <h2>S'enregistrer</h2>
+        </Link>
       </div>
     </>
   );
