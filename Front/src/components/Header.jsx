@@ -2,7 +2,7 @@ import React from "react";
 import kiwi from "../assets/kiwi.png";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ idUser }) => {
   return (
     <>
       <div className="header">
@@ -11,7 +11,11 @@ const Header = () => {
           <h1>Les fruits et les légumes de saison</h1>
         </div>
         <Link to="/signin">
-          <h2>S'enregistrer</h2>
+          {idUser === null ? (
+            <h2 className="header__signin-link">S'enregistrer</h2>
+          ) : (
+            <></>
+          )}
         </Link>
       </div>
     </>

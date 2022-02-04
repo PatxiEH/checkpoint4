@@ -33,7 +33,7 @@ const validateUser = (req, res, next) => {
     email: Joi.string().email().max(255).presence('required'),
     lastname: Joi.string().max(255).presence('optional'),
     firstname: Joi.string().max(100).presence('required'),
-    password: Joi.string().min(5).max(10).presence('required'),
+    password: Joi.string().min(3).max(10).presence('required'),
   }).validate(req.body, { abortEarly: false }).error;
   if (errors) {
     next(errors.message);

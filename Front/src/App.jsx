@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 
-import Header from "./components/Header";
-import SeasonsList from "./components/SeasonsList";
-import FruitsAndVegetablesList from "./components/FruitsAndVegetablesList";
-import TypeSelect from "./components/TypeSelect";
-import AddProduct from "./components/AddProduct";
+import Home from "./components/Home";
 import SigninForm from "./components/SigninForm";
 
 function App() {
@@ -17,27 +13,8 @@ function App() {
 
   return (
     <>
-      <Header />
-      <SeasonsList setSeason={setSeason} />
-      <TypeSelect
-        setShowFruits={setShowFruits}
-        showFruits={showFruits}
-        setShowVegetables={setShowVegetables}
-        showVegetables={showVegetables}
-      />
-      <FruitsAndVegetablesList
-        season={season}
-        showFruits={showFruits}
-        showVegetables={showVegetables}
-        updateList={updateList}
-      />
-      <AddProduct
-        idUser={idUser}
-        setIdUser={setIdUser}
-        updateList={updateList}
-        setUpdateList={setUpdateList}
-      />
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/signin" element={<SigninForm />} />
       </Routes>
     </>

@@ -10,7 +10,13 @@
     width: 60%;
     padding-left: 2em;
     img {
-      width: 7%;
+      width: auto;
+      height: 5em;
     }
+  }
+
+  &__signin-link {
+    color: brown;
+    list-style: none;
   }
 }

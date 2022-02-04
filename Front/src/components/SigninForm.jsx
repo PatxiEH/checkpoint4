@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const SigninForm = () => {
   const [email, setEmail] = useState();
@@ -8,6 +9,11 @@ const SigninForm = () => {
   const [firstname, setFirstname] = useState();
   const [errorMessage, setErrorMessage] = useState();
   const [user, setUser] = useState();
+  const navigate = useNavigate();
+
+  function redirectHome() {
+    navigate("/");
+  }
 
   const Login = (e) => {
     e.preventDefault();
@@ -27,6 +33,7 @@ const SigninForm = () => {
       .then((data) => {
         console.log(data);
         setErrorMessage("");
+        redirectHome();
       })
       .catch((err) => {
         if (err.response.status === 401) {
